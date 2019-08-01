@@ -69,7 +69,7 @@ class SingleLinkedList<T: Equatable> {
     }
     //MARK: - implements Question1
     //How do you find the middle element of a singly linked list in one pass?
-    func Solution1(linkedList: SingleLinkedList<T>) {
+    func Solution1() {
         var middlenode: SingleNode! = head
         var current: SingleNode! = head
     
@@ -107,6 +107,19 @@ class SingleLinkedList<T: Equatable> {
         current = pointer
         current.next = previous
         head = current
+    }
+    //MARK: - Question3
+    // Third element from end
+    func findThirdNode() {
+        var pointer = head
+        var previous = head
+        var count = 0
+        while pointer.next?.next != nil {
+            count += 1
+            previous = pointer
+            pointer = pointer.next!
+        }
+        count == 0 ? print("not possible"):print(previous.val!)
     }
 }
 
