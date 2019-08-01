@@ -36,10 +36,10 @@ class SingleLinkedList<T: Equatable> {
             print("There is no element in Linked List ")
         } else {
             while current.next != nil {
-                print(current.val!)
+                print(current.val ?? "")
                 current = current.next
             }
-            print(current.val!)
+            print(current.val ?? "")
         }
     }
     //MARK: - remove from linkedList
@@ -91,5 +91,23 @@ class SingleLinkedList<T: Equatable> {
             print("Data in middle \(middlenode.val!)")
         }
     }
+    //MARK: - implements Quetion2
+    //How do you reverse a linked list?
+    func Solution2() {
+        var pointer = head
+        var previous: SingleNode<T>? = nil
+        var current = head
+        while pointer.next != nil {
+            current = pointer
+            pointer = pointer.next!
+            current.next = previous
+            previous = current
+            head = current
+        }
+        current = pointer
+        current.next = previous
+        head = current
+    }
 }
+
 
