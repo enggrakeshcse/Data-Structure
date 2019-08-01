@@ -25,7 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE230F7522F2BD3A006BB128 /* Single-Linked-List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Single-Linked-List"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE230F7522F2BD3A006BB128 /* Linked-List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Linked-List"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE230F7822F2BD3A006BB128 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CE230F8022F2C1BE006BB128 /* SinglyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyLinkedList.swift; sourceTree = "<group>"; };
 		CE230F8222F2C5D6006BB128 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		CE230F7622F2BD3A006BB128 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE230F7522F2BD3A006BB128 /* Single-Linked-List */,
+				CE230F7522F2BD3A006BB128 /* Linked-List */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,9 +71,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE230F7422F2BD3A006BB128 /* Single-Linked-List */ = {
+		CE230F7422F2BD3A006BB128 /* Linked-List */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE230F7C22F2BD3A006BB128 /* Build configuration list for PBXNativeTarget "Single-Linked-List" */;
+			buildConfigurationList = CE230F7C22F2BD3A006BB128 /* Build configuration list for PBXNativeTarget "Linked-List" */;
 			buildPhases = (
 				CE230F7122F2BD3A006BB128 /* Sources */,
 				CE230F7222F2BD3A006BB128 /* Frameworks */,
@@ -83,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = "Single-Linked-List";
+			name = "Linked-List";
 			productName = "Single-Linked-List";
-			productReference = CE230F7522F2BD3A006BB128 /* Single-Linked-List */;
+			productReference = CE230F7522F2BD3A006BB128 /* Linked-List */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE230F7422F2BD3A006BB128 /* Single-Linked-List */,
+				CE230F7422F2BD3A006BB128 /* Linked-List */,
 			);
 		};
 /* End PBXProject section */
@@ -278,7 +278,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE230F7C22F2BD3A006BB128 /* Build configuration list for PBXNativeTarget "Single-Linked-List" */ = {
+		CE230F7C22F2BD3A006BB128 /* Build configuration list for PBXNativeTarget "Linked-List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE230F7D22F2BD3A006BB128 /* Debug */,
