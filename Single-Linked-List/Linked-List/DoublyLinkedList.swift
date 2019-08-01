@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - Doubly Linked List node
 class DoublyNode<T: Equatable> {
     var val: T?
     var next: DoublyNode?
@@ -14,6 +15,7 @@ class DoublyNode<T: Equatable> {
 }
 class DoublyLinkedList<T: Equatable> {
     var head = DoublyNode<T>()
+    //MARK: - Insert from end
     func insertFromEnd(value: T){
         if head.val == nil {
             head.val = value
@@ -28,6 +30,7 @@ class DoublyLinkedList<T: Equatable> {
             newNode.previous = lastNode
         }
     }
+    //MARK: - print all element
     func printAllElement() {
         var current: DoublyNode = head
         if current.val == nil {
@@ -40,6 +43,7 @@ class DoublyLinkedList<T: Equatable> {
         print(current.val!)
         }
     }
+    //MARK: - delete a element 
     func remove(value: T) {
         var current: DoublyNode = head
         var previous: DoublyNode = head

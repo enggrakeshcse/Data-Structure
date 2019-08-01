@@ -45,7 +45,7 @@
 		CE230F6C22F2BD3A006BB128 = {
 			isa = PBXGroup;
 			children = (
-				CE230F7722F2BD3A006BB128 /* Single-Linked-List */,
+				CE230F7722F2BD3A006BB128 /* Linked-List */,
 				CE230F7622F2BD3A006BB128 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,14 +58,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE230F7722F2BD3A006BB128 /* Single-Linked-List */ = {
+		CE230F7722F2BD3A006BB128 /* Linked-List */ = {
 			isa = PBXGroup;
 			children = (
 				CE230F7822F2BD3A006BB128 /* main.swift */,
 				CE230F8022F2C1BE006BB128 /* SinglyLinkedList.swift */,
 				CE230F8222F2C5D6006BB128 /* DoublyLinkedList.swift */,
 			);
-			path = "Single-Linked-List";
+			path = "Linked-List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE230F7022F2BD3A006BB128 /* Build configuration list for PBXProject "Single-Linked-List" */;
+			buildConfigurationList = CE230F7022F2BD3A006BB128 /* Build configuration list for PBXProject "Linked-List" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -269,7 +269,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE230F7022F2BD3A006BB128 /* Build configuration list for PBXProject "Single-Linked-List" */ = {
+		CE230F7022F2BD3A006BB128 /* Build configuration list for PBXProject "Linked-List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE230F7A22F2BD3A006BB128 /* Debug */,
