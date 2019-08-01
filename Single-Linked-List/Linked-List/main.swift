@@ -7,16 +7,17 @@
 
 import Foundation
 
-//Single Linked List
+//MARK: - Single Linked List
 let singleLinkedlist = SingleLinkedList<Int>()
+singleLinkedlist.insert(value: 1)
 singleLinkedlist.insert(value: 2)
 singleLinkedlist.insert(value: 3)
 singleLinkedlist.insert(value: 4)
-singleLinkedlist.printAllElemetArray()
 singleLinkedlist.remove(value: 5)
 singleLinkedlist.printAllElemetArray()
+singleLinkedlist.Question1(linkedList: singleLinkedlist)
 
-//Doubly Linked List
+//MARK: - Doubly Linked List
 let doubleLinkedList = DoublyLinkedList<Int>()
 doubleLinkedList.insertFromEnd(value: 1)
 doubleLinkedList.insertFromEnd(value: 2)

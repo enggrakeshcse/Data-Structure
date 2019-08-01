@@ -13,7 +13,7 @@ class SingleNode<T: Equatable> {
     var next: SingleNode?
 }
 class SingleLinkedList<T: Equatable> {
-    var head = SingleNode<T>()
+     var head = SingleNode<T>()
     //MARK: - insertion from end
     func insert(value: T) {
         if head.val == nil {
@@ -67,4 +67,28 @@ class SingleLinkedList<T: Equatable> {
             }
         }
     }
+    //MARK: - implements Questionone
+    func Question1(linkedList: SingleLinkedList<T>) {
+        var middlenode: SingleNode! = head
+        var current: SingleNode! = head
+    
+        var length = 0
+        while current.next != nil {
+            length += 1
+            if length%2 == 0 {
+                middlenode = middlenode.next
+            }
+            current = current.next
+        }
+        
+        print("length on linkedlist is \(length + 1)")
+        if length%2 == 1 {
+            print("Data in middle \(middlenode.val!) \(middlenode.next!.val!)")
+            //middlenode = middlenode.next
+            
+        } else {
+            print("Data in middle \(middlenode.val!)")
+        }
+    }
 }
+
