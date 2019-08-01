@@ -15,7 +15,7 @@ singleLinkedlist.insert(value: 3)
 singleLinkedlist.insert(value: 4)
 singleLinkedlist.remove(value: 5)
 singleLinkedlist.printAllElemetArray()
-singleLinkedlist.Question1(linkedList: singleLinkedlist)
+singleLinkedlist.Solution1(linkedList: singleLinkedlist)
 
 //MARK: - Doubly Linked List
 let doubleLinkedList = DoublyLinkedList<Int>()

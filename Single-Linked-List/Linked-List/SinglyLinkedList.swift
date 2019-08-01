@@ -67,8 +67,9 @@ class SingleLinkedList<T: Equatable> {
             }
         }
     }
-    //MARK: - implements Questionone
-    func Question1(linkedList: SingleLinkedList<T>) {
+    //MARK: - implements Question1
+    //How do you find the middle element of a singly linked list in one pass?
+    func Solution1(linkedList: SingleLinkedList<T>) {
         var middlenode: SingleNode! = head
         var current: SingleNode! = head
     
