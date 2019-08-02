@@ -10,6 +10,7 @@
 		CE230F7922F2BD3A006BB128 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE230F7822F2BD3A006BB128 /* main.swift */; };
 		CE230F8122F2C1BE006BB128 /* SinglyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE230F8022F2C1BE006BB128 /* SinglyLinkedList.swift */; };
 		CE230F8322F2C5D6006BB128 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE230F8222F2C5D6006BB128 /* DoublyLinkedList.swift */; };
+		CE971E1322F40B18009EC6A6 /* Question4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE971E1222F40B18009EC6A6 /* Question4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		CE230F7822F2BD3A006BB128 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CE230F8022F2C1BE006BB128 /* SinglyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyLinkedList.swift; sourceTree = "<group>"; };
 		CE230F8222F2C5D6006BB128 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		CE971E1222F40B18009EC6A6 /* Question4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				CE230F7822F2BD3A006BB128 /* main.swift */,
 				CE230F8022F2C1BE006BB128 /* SinglyLinkedList.swift */,
 				CE230F8222F2C5D6006BB128 /* DoublyLinkedList.swift */,
+				CE971E1222F40B18009EC6A6 /* Question4.swift */,
 			);
 			path = "Linked-List";
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			files = (
 				CE230F7922F2BD3A006BB128 /* main.swift in Sources */,
 				CE230F8322F2C5D6006BB128 /* DoublyLinkedList.swift in Sources */,
+				CE971E1322F40B18009EC6A6 /* Question4.swift in Sources */,
 				CE230F8122F2C1BE006BB128 /* SinglyLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

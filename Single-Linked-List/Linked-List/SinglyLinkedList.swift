@@ -94,33 +94,31 @@ class SingleLinkedList<T: Equatable> {
     //MARK: - implements Quetion2
     //How do you reverse a linked list?
     func Solution2() {
-        var pointer = head
+        var start = head
         var previous: SingleNode<T>? = nil
         var current = head
-        while pointer.next != nil {
-            current = pointer
-            pointer = pointer.next!
+        while start.next != nil {
+            current = start
+            start = start.next!
             current.next = previous
             previous = current
             head = current
         }
-        current = pointer
+        current = start
         current.next = previous
         head = current
     }
     //MARK: - Question3
     // Third element from end
     func findThirdNode() {
-        var pointer = head
+        var start = head
         var previous = head
         var count = 0
-        while pointer.next?.next != nil {
+        while start.next?.next != nil {
             count += 1
-            previous = pointer
-            pointer = pointer.next!
+            previous = start
+            start = start.next!
         }
         count == 0 ? print("not possible"):print(previous.val!)
     }
 }
-
-
