@@ -7,6 +7,8 @@
 //
 
 import Foundation
-
-
-
+print("Enter your input")
+var arrinput = readLine()!.split(separator: " ").map{(Int(String($0)))!}
+let sortalgo = SortAlgo()
+print(sortalgo.SelectionSort(inputArr: &arrinput))
+print(sortalgo.InsertionSort(inputArr: &arrinput))
