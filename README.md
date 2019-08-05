@@ -1,8 +1,8 @@
 # Data-Structure
 ## Sorting Algo
 ### Selection Sort
-Algo : -
-Step 1 − Set MIN to location 0
+Algo : - <br />
+Step 1 − Set MIN to location 0 <br />
 Step 2 − Search the minimum element in the list
 Step 3 − Swap with value at location MIN
 Step 4 − Increment MIN to point to next element
