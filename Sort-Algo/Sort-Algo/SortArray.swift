@@ -97,4 +97,24 @@ class SortAlgo {
             Merge(inputArr: &inputArr, s:l, m:m , last:r)
         }
     }
+    //MARK: - Implements of Quick Sort
+    func Partition(inputArr: inout [Int], start: Int, end: Int) -> Int {
+        let pivot = inputArr[end]
+        var i = start - 1
+        for j in start...end - 1 {
+            if inputArr[j] <= pivot {
+                i += 1
+                Swap(i: i, j: j, inputArr: &inputArr)
+            }
+        }
+        Swap(i: i + 1, j: end, inputArr: &inputArr)
+        return i + 1
+    }
+    func QuickSort(inputArr: inout [Int], start: Int, end: Int) {
+        if start < end {
+            let pi = Partition(inputArr: &inputArr, start: start, end: end)
+            QuickSort(inputArr: &inputArr, start: start, end: pi)
+            QuickSort(inputArr: &inputArr, start: pi + 1, end: end)
+        }
+    }
 }
