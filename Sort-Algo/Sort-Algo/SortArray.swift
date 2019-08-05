@@ -47,4 +47,54 @@ class SortAlgo {
         }
         return inputArr
     }
+    //MARK: - Implements of MergeSort
+    func Merge(inputArr: inout [Int], s:Int, m:Int, last:Int) {
+        var p = s ,q = m + 1
+        var start = s
+        var Arr = [Int]()
+        for _ in 0..<last - start + 1{
+            Arr.append(0)
+        }
+        var k=0
+        for _ in start...last {
+            //checks if first part comes to an end or not .
+            if p > m {
+                    Arr[k] = inputArr[q]
+                    k += 1
+                    q += 1
+            }
+            //checks if second part comes to an end or not
+            else if  q > last {
+                    Arr[k] = inputArr[p]
+                    k += 1
+                    p += 1
+            }
+            //checks which part has smaller element.
+            else if inputArr[ p ] < inputArr[ q ] {
+                    Arr[k] = inputArr[p]
+                    k += 1
+                    p += 1
+            }
+            
+            else {
+                    Arr[k] = inputArr[q]
+                    k += 1
+                    q += 1
+            }
+        }
+        // real array with sorted elements
+        for index in 0..<k {
+            inputArr[start] = Arr[index]
+            start += 1
+        }
+    
+    }
+    func MergeSort(inputArr: inout [Int], l: Int, r: Int) {
+        if l < r {
+            let m = (l + r - 1)/2
+            MergeSort(inputArr: &inputArr, l: l, r: m)
+            MergeSort(inputArr: &inputArr, l: m + 1, r: r)
+            Merge(inputArr: &inputArr, s:l, m:m , last:r)
+        }
+    }
 }

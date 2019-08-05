@@ -10,7 +10,9 @@ import Foundation
 print("Enter your input")
 var arrinput = readLine()!.split(separator: " ").map{(Int(String($0)))!}
 let sortalgo = SortAlgo()
-print(sortalgo.BubbleSort(inputArr: &arrinput))
+sortalgo.MergeSort(inputArr: &arrinput, l: 0, r: arrinput.count - 1)
+print(arrinput)
+//print(sortalgo.BubbleSort(inputArr: &arrinput))
 //print(sortalgo.SelectionSort(inputArr: &arrinput))
 //print(sortalgo.InsertionSort(inputArr: &arrinput))
 
