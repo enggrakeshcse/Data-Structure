@@ -8,9 +8,12 @@
 
 import Foundation
 
+class Node<T: Equatable> {
+    
+}
 class Queue<T: Equatable> {
     //MARK: - implements Queue using LinkedList
-    
+
     //MARK: - implements Queue using Array
     var QueueArray = [T]()
     var isEmpty: Bool {
