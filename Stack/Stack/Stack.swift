@@ -50,11 +50,11 @@ class Stack<T: Equatable> {
     }
     func pop(){
         if self.StackArray.last != nil {
-           let returnElement = self.StackArray.last
+           //let returnElement = self.StackArray.last
             self.StackArray.removeLast()
            // print(returnElement!)
         } else {
-           // print("underflow occurs")
+            print("underflow occurs")
         }
     }
 //    func isEmpty() -> Bool {

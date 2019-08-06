@@ -28,10 +28,22 @@ let stack = Stack<Int>()
 //stack.printAllElemetLinkedList()
 
 //Question1
-print("Enter the input")
-let arrInput = readLine()!
-print(arrInput)
+//print("Enter the input")
+//let arrInput = readLine()!
+//print(arrInput)
 //stack.Solution1(arrInput: arrInput) ? print("balanced"): print("not balanced")
 
 //Question2
 //print(stack.Solution2(arrInput: arrInput))
+
+//Question3
+//let queue = Queue<Int>()
+//queue.Enqueue(value: 1)
+//queue.Enqueue(value: 2)
+//queue.Enqueue(value: 3)
+//queue.Enqueue(value: 5)
+//queue.Dequeue()
+//queue.Dequeue()
+//queue.Dequeue()
+//queue.Dequeue()
+//queue.Dequeue()
