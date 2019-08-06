@@ -57,12 +57,18 @@ class Stack<T: Equatable> {
            // print("underflow occurs")
         }
     }
-    func isEmpty() -> Bool {
+//    func isEmpty() -> Bool {
+//        return self.StackArray.isEmpty
+//    }
+    public var isEmpty: Bool {
         return self.StackArray.isEmpty
     }
-    func Top() -> T {
-        return self.StackArray.last as! T
+    public var top: T? {
+        return self.StackArray.last
     }
+//    func Top() -> T {
+//        return self.StackArray.last as! T
+//    }
     func printAllElementsInStack() {
         if self.StackArray.isEmpty {
             print("There is no Element in Stack")
@@ -85,26 +91,26 @@ class Stack<T: Equatable> {
                // print(stack.printAllElementsInStack())
                 continue
             }
-            if stack.isEmpty() {
+            if stack.isEmpty {
                 return false
             }
             
             switch element {
             case ")":
-                let x = stack.Top()
+                let x = stack.top
                 stack.pop()
                 if x == "[" || x == "{" {
                     return false
                 }
                 
             case "}":
-                let x = stack.Top()
+                let x = stack.top
                 stack.pop()
                 if x == "[" || x == "(" {
                     return false
                 }
             case "]":
-                let x = stack.Top()
+                let x = stack.top
                 stack.pop()
                 if x == "(" || x == "{" {
                     return false
@@ -114,18 +120,18 @@ class Stack<T: Equatable> {
                 break
             }
         }
-        return stack.isEmpty()
+        return stack.isEmpty
     }
     //MARK: - Question2
     //Reverse the String without using Recursive
     func Solution2(arrInput: String) -> String {
         var result = ""
-        let stack = Stack<Character>()
+        let stack = Stack<String>()
         for element in arrInput {
-            stack.push(value: element)
+            stack.push(value: String(element))
         }
-        while !(stack.isEmpty()) {
-            result += String(stack.Top())
+        while !(stack.isEmpty) {
+            result += stack.top ?? ""
             stack.pop()
         }
         return result

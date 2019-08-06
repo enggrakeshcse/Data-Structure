@@ -30,8 +30,8 @@ let stack = Stack<Int>()
 //Question1
 print("Enter the input")
 let arrInput = readLine()!
-//print(arrInput)
+print(arrInput)
 //stack.Solution1(arrInput: arrInput) ? print("balanced"): print("not balanced")
 
 //Question2
-print(stack.Solution2(arrInput: arrInput))
+//print(stack.Solution2(arrInput: arrInput))
