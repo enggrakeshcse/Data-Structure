@@ -19,10 +19,16 @@ let stack = Stack<Int>()
 //stack.printAllElementsInStack()
 
 // Stack Implements using LinkedList
-stack.pushThroughLinkedList(value: 2)
-stack.pushThroughLinkedList(value: 3)
-stack.pushThroughLinkedList(value: 4)
-stack.pushThroughLinkedList(value: 5)
-stack.printAllElemetLinkedList()
-stack.popThroughLinkedList()
-stack.printAllElemetLinkedList()
+//stack.pushThroughLinkedList(value: 2)
+//stack.pushThroughLinkedList(value: 3)
+//stack.pushThroughLinkedList(value: 4)
+//stack.pushThroughLinkedList(value: 5)
+//stack.printAllElemetLinkedList()
+//stack.popThroughLinkedList()
+//stack.printAllElemetLinkedList()
+
+//Question1
+print("Enter the input")
+let arrInput = readLine()!
+print(arrInput)
+stack.Solution1(arrInput: arrInput) ? print("balanced"): print("not balanced")

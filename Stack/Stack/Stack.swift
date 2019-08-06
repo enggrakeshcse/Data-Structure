@@ -35,7 +35,6 @@ class Stack<T: Equatable> {
             print(current.val ?? "")
         }
     }
-    
     func popThroughLinkedList() {
         if let head1 = head.next {
             head = head1
@@ -53,10 +52,16 @@ class Stack<T: Equatable> {
         if self.StackArray.last != nil {
            let returnElement = self.StackArray.last
             self.StackArray.removeLast()
-            print(returnElement!)
+           // print(returnElement!)
         } else {
-            print("underflow occurs")
+           // print("underflow occurs")
         }
+    }
+    func isEmpty() -> Bool {
+        return self.StackArray.isEmpty
+    }
+    func Top() -> T {
+        return self.StackArray.last as! T
     }
     func printAllElementsInStack() {
         if self.StackArray.isEmpty {
@@ -67,5 +72,48 @@ class Stack<T: Equatable> {
             }
             print("")
         }
+    }
+    //MARK : - Question1
+    //Check if given expression is balanced expression or not?
+    func Solution1(arrInput: String) -> Bool {
+        print(arrInput)
+        let stack = Stack<Character>()
+        print(arrInput)
+        for element in arrInput{
+            if element == "(" || element == "{" || element == "[" {
+                stack.push(value: element)
+               // print(stack.printAllElementsInStack())
+                continue
+            }
+            if stack.isEmpty() {
+                return false
+            }
+            
+            switch element {
+            case ")":
+                let x = stack.Top()
+                stack.pop()
+                if x == "[" || x == "{" {
+                    return false
+                }
+                
+            case "}":
+                let x = stack.Top()
+                stack.pop()
+                if x == "[" || x == "(" {
+                    return false
+                }
+            case "]":
+                let x = stack.Top()
+                stack.pop()
+                if x == "(" || x == "{" {
+                    return false
+                }
+                
+            default:
+                break
+            }
+        }
+        return stack.isEmpty()
     }
 }
