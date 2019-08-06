@@ -116,4 +116,18 @@ class Stack<T: Equatable> {
         }
         return stack.isEmpty()
     }
+    //MARK: - Question2
+    //Reverse the String without using Recursive
+    func Solution2(arrInput: String) -> String {
+        var result = ""
+        let stack = Stack<Character>()
+        for element in arrInput {
+            stack.push(value: element)
+        }
+        while !(stack.isEmpty()) {
+            result += String(stack.Top())
+            stack.pop()
+        }
+        return result
+    }
 }
