@@ -49,8 +49,6 @@ For Example:- <br />
 ### Merge Sort
 TimeComplexity = O(nlogn)
 <img src="https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/Images/Screen%20Shot%202019-08-07%20at%201.03.14%20PM.png" /> <br />
-
-
 <imp src = "https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/Images/merge.png" /> 
 
 ### Quick Sort 
