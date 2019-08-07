@@ -47,7 +47,7 @@ For Example:- <br />
 4   2   7   8 <br />
 2   4   7   8 <br />
 ### Merge Sort
-<img src="https://www.google.com/search?q=merge+sort+implementation&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjunN3sovDjAhVH6XMBHVT2Bm0Q_AUIESgC&biw=1920&bih=850#imgrc=Aqib2YhxLQY9BM:" />
-<imp src = "https://www.google.com/search?q=merge+sort+implementation&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjunN3sovDjAhVH6XMBHVT2Bm0Q_AUIESgC&biw=1920&bih=850#imgrc=WVP2lzCQ96Zp8M:" /> 
+<img src="https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/Images/Screen%20Shot%202019-08-07%20at%201.03.14%20PM.png" />
+<imp src = "https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/Images/Screen%20Shot%202019-08-07%20at%201.03.22%20PM.png" /> 
 
 ### Quick Sort 
