@@ -9,11 +9,49 @@
 import Foundation
 
 class Node<T: Equatable> {
-    
+    var val: T?
+    var next: Node?
+    init(value: T) {
+        self.val = value
+        self.next = nil
+    }
 }
 class Queue<T: Equatable> {
     //MARK: - implements Queue using LinkedList
-
+    var rear: Node<T>? = nil
+    var front: Node<T>? = nil
+    var isEmptyLinkedList: Bool {
+       return front == nil ? true : false
+    }
+    var peek: T? {
+        return front != nil ? front?.val : nil
+    }
+    var isRareLikedList: T?{
+        return rear != nil ? rear?.val : nil
+    }
+    // Enqueue a Queue
+    func EnqueueLinkedList(value: T) {
+        let node = Node<T>(value: value)
+        if front == nil {
+            front = node
+            rear = node
+        } else {
+            rear?.next = node
+            rear = node
+        }
+    }
+    // Dequeue a Queue
+    func DequeueLinkedList() {
+        if front == nil {
+            print("underflow condition")
+        } else {
+            print(front?.val ?? "")
+            front = front?.next
+            if front == nil {
+                rear = nil
+            }
+        }
+    }
     //MARK: - implements Queue using Array
     var QueueArray = [T]()
     var isEmpty: Bool {
