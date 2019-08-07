@@ -9,8 +9,10 @@ Step 4 − Increment MIN to point to next element <br />
 Step 5 − Repeat until list is sorted <br />
 TimeComplexity = O(n^2) <br />
 For Example:- <br />
-    7   5   4   2
-    <font color="red"> 7 </font> 5  4 <font color="red"> 4 </font>
+    7   8   4   2 <br />
+    2   8   4   7 <br />
+    2   4   8   7 <br />
+    2   4   7   8 <br />
 ### Insertion Sort
 Algo: - <br />
 Step 1 − If it is the first element, it is already sorted. return 1 <br />
@@ -21,6 +23,14 @@ value to be sorted <br />
 Step 5 − Insert the value <br />
 Step 6 − Repeat until list is sorted <br />
 TimeComplexity- O(n^2) <br />
+For Example:- <br />
+7   8   4   2 <br />
+7   8   4   2 <br />
+4   8   7   2 <br />
+4   7   8   2 <br />
+2   7   8   4 <br />
+2   4   8   7 <br />
+2   4   7   8 <br />
 ### Bubble Sort
 Algo: - <br />
 Step 1 - Take a unsorted list<br />
@@ -29,7 +39,12 @@ Step 3 - for j = 0 to list.count - 1 - i <br />
 Step 4 - if list[j] > list[j + 1] -> Swap(list[j], list[j + 1])<br />
 Step 5 - finally we get sorted list<br />
 TimeComplexity = O(n^2)<br />
+For Example:- <br />
+7   8   4   2 <br />
+7   8   4   2 <br />
+7   4   8   2 <br />
+4   7   2   8 <br />
+4   2   7   8 <br />
+2   4   7   8 <br />
 ### Merge Sort
 ### Quick Sort 
-
-
