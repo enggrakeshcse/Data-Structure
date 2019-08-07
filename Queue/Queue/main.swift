@@ -22,7 +22,8 @@ let object = Queue<Int>()
 //object.PrintAllElementInQueue()
 
 // Queue implements using Linked List
-//object.EnqueueLinkedList(value: 2)
-//object.EnqueueLinkedList(value: 4)
-//object.Enqueue(value: 5)
-//object.DequeueLinkedList()
+object.EnqueueLinkedList(value: 2)
+object.EnqueueLinkedList(value: 4)
+object.Enqueue(value: 5)
+object.DequeueLinkedList()
+
