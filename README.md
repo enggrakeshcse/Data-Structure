@@ -55,4 +55,5 @@ merge
 <imp src = "https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/Images/merge.png" /> 
 
 ### Quick Sort 
+TimeComplexity = O(nlogn)
 <imp src = "https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/Images/quick_sort.jpg" />
