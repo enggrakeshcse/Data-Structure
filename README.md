@@ -55,6 +55,6 @@ TimeComplexity = O(nlogn)<br/>
 <img src="https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/merge.png" /> 
 
 ### Quick Sort 
-TimeComplexity = O(nlogn)
+TimeComplexity = O(nlogn) <br />
 <img src="https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/quick_sort.jpg" /> 
 
