@@ -50,11 +50,11 @@ For Example:- <br />
 TimeComplexity = O(nlogn)<br/>
 <img src="https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/Images/Screen%20Shot%202019-08-07%20at%201.03.14%20PM.png" /> 
 
-merge
+<b>merge<\b>
 
 <img src="https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/merge.png" /> 
 
 ### Quick Sort 
 TimeComplexity = O(nlogn)
-<imp src = "https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/Images/quick_sort.jpg" />
+<imp src ="https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/quick_sort.jpg" />
 
