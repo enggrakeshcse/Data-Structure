@@ -1,16 +1,14 @@
 # Data-Structure
 ## Recursive 
 https://www.geeksforgeeks.org/recursion-practice-problems-solutions/
-### Question1 
-Recursive program for prime number?
-### Question2
+### Question1
 Print a pattern without using any loop?
-### Question3
+### Question2
 Implements of Tower of Hanoi?
-### Question4
+### Question3
 Power Set in Lexicographic order?
-### Question5
+### Question4
 Find middle of singly linked list Recursively?
-### Question6
+### Question5
 Recursive approach for alternating split of Linked List?
 
