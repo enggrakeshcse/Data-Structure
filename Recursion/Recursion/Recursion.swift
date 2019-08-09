@@ -110,4 +110,16 @@ class Recursive {
             print("not possible")
         }
     }
+    // MARK: - Question6
+    // Recursive example
+    var output = 0
+    func solution6(input: inout Int){
+        print("hi")
+        input -= 1
+        if input > 0 {
+            solution6(input: &input)
+            output += 1
+            print(output)
+        }
+    }
 }

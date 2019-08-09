@@ -25,10 +25,15 @@ let recursion = Recursive()
 //recursion.solution3(input: input)
 
 // Solution3 and Solution4
-let head = recursion.newNode(value: 1)
-head.next = recursion.newNode(value: 2)
-head.next?.next = recursion.newNode(value: 3)
-head.next?.next?.next = recursion.newNode(value: 4)
-head.next?.next?.next?.next = recursion.newNode(value: 5)
-recursion.solution4(head: head)
-recursion.solution5(head: head)
+//let head = recursion.newNode(value: 1)
+//head.next = recursion.newNode(value: 2)
+//head.next?.next = recursion.newNode(value: 3)
+//head.next?.next?.next = recursion.newNode(value: 4)
+//head.next?.next?.next?.next = recursion.newNode(value: 5)
+//recursion.solution4(head: head)
+//recursion.solution5(head: head)
+
+// MARK: - Question6
+// Recursive Example
+var input = 5
+recursion.solution6(input: &input)
