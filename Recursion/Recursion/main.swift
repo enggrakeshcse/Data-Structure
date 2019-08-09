@@ -34,6 +34,6 @@ let recursion = Recursive()
 //recursion.solution5(head: head)
 
 // MARK: - Question6
-// Recursive Example
+// Understand flow of Recursive function
 var input = 5
 recursion.solution6(input: &input)

@@ -111,7 +111,7 @@ class Recursive {
         }
     }
     // MARK: - Question6
-    // Recursive example
+    // Understand flow of Recursive funtion
     var output = 0
     func solution6(input: inout Int){
         print("hi")
