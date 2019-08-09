@@ -87,9 +87,19 @@ class Recursive {
     }
     // MARK: - Question5
     // Recursive approach for alternating split of Linked List?
+    func displyList(head: Node) {
+        var head = head
+        while head.next != nil {
+            print(head.val ?? "")
+            head = head.next!
+        }
+        print(head.val ?? "")
+    }
     var a: Node?
     var b: Node?
-    func moveNode(a:  Node?, b:  Node?) {
+    var f1: Node?
+    var f2: Node?
+    func moveNode(a:  Node?, b: Node?) {
         if a == nil || b == nil {
             return
         }
@@ -103,12 +113,14 @@ class Recursive {
     }
     func solution5(head: Node) {
         if head.next != nil {
-             a = head
-             b = head.next
-            moveNode(a: a, b: b)
+             f1 = head
+             f2 = head.next
+            moveNode(a: f1, b: f2)
         } else {
             print("not possible")
         }
+        displyList(head: f1!)
+        displyList(head: f2!)
     }
     // MARK: - Question6
     // Understand flow of Recursive funtion
