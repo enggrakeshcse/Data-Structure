@@ -11,4 +11,6 @@ Power Set in Lexicographic order?
 Find middle of singly linked list Recursively?
 ### Question5
 Recursive approach for alternating split of Linked List?
+### Question6
+Understand flow of recursive function
 
