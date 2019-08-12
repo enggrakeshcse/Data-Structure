@@ -1,8 +1,4 @@
 # Data-Structure
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## Recursive 
 https://www.geeksforgeeks.org/recursion-practice-problems-solutions/
 ### Question1
@@ -17,11 +13,11 @@ Find middle of singly linked list Recursively?
 Recursive approach for alternating split of Linked List?
 ### Question6
 Understand flow of recursive function
+
 =======
 
-https://www.geeksforgeeks.org/top-20-linked-list-interview-question/
-
 ## Linked List
+https://www.geeksforgeeks.org/top-20-linked-list-interview-question/
 ### Implements a Single Linked List
 ### Implements a Doubly Linked List
 ### Question1 
@@ -32,9 +28,9 @@ How do you reverse a linked list?
 Third Element from end?
 ### Question4
 How do delete the elements in an linked list whose sum is equal to zero?
->>>>>>> Linked-List
 
 =======
+
 ## Stack
 ### Stack Implementation using Array
 ### Stack Implementation using LinkedList
@@ -44,16 +40,17 @@ Check if given expression is balanced expression or not?
 Reverse the String without using Recrusive.
 ### Question3
 Implements Queue using Stack.
->>>>>>> Stack
+
 =======
+
+## Queue
 https://medium.com/@codingfreak/queue-data-structure-practice-problems-and-interview-questions-f459bf0578db <br />
 https://www.geeksforgeeks.org/queue-data-structure/ <br />
-## Queue
 ### Queue implementation using Array
 ### Queue implementation using LinkedList
 
->>>>>>> Queue
 =======
+
 ## Sorting Algo
 ### Selection Sort
 Algo : - <br />
@@ -112,5 +109,3 @@ TimeComplexity = O(nlogn)<br/>
 ### Quick Sort 
 TimeComplexity = O(nlogn) <br />
 <img src="https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/quick_sort.jpg" /> 
-
->>>>>>> Sorting-Algo
