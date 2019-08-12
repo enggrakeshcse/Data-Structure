@@ -121,9 +121,12 @@ for example <br />
 <img src="https://github.com/enggrakeshcse/Data-Structure/blob/Trees/Tree/images/binaryTree.png" /> 
 
 ### Traverse inorder, Preorder and postorder in Binary Tree
-### Inorder (or depth-first):
+ Inorder (or depth-first):-<br />
 first look at the left child of a node, then at the node itself, and finally at its right child. <br />
-### Preorder
+[7, 3, 8, 1, 9, 4, 10, 0, 11, 5, 12, 2, 13, 6, 14]<br />
+ Preorder:-<br />
 first look at a node, then at its left and right children. <br />
-### Postorder
+[0, 1, 3, 7, 8, 4, 9, 10, 2, 5, 11, 12, 6, 13, 14]<br />
+ Postorder:-<br />
 first look at the left and right children and process the node itself last. <br />
+[7, 8, 3, 9, 10, 4, 1, 11, 12, 5, 13, 14, 6, 2, 0]<br />
