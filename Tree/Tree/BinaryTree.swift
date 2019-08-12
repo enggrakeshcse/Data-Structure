@@ -8,63 +8,50 @@
 
 import Foundation
 
-public indirect enum BinaryTree<T> {
-    case node(BinaryTree<T>, T, BinaryTree<T>)
-    case empty
-    
-    public var count: Int {
-        switch self {
-        case let .node(left, _, right):
-            return left.count + 1 + right.count
-        case .empty:
-            return 0
-        }
+//MARK: - Implementation of Binary Tree in swift
+//MARK: - Traverse inorder, Preorder and postorder in tree
+
+class Node<T: Equatable> {
+    var data: T?
+    var leftChild: Node?
+    var rightChild: Node?
+    init(data: T, leftChild: Node? = nil, rightChild: Node? = nil) {
+        self.data = data
+        self.leftChild = leftChild
+        self.rightChild = rightChild
     }
 }
-
-extension BinaryTree: CustomStringConvertible {
-    public var description: String {
-        switch self {
-        case let .node(left, value, right):
-            return "value: \(value), left = [\(left.description)], right = [\(right.description)]"
-        case .empty:
-            return ""
+class BinaryTree<T: Equatable> {
+    func preorderTraversal(_ root: Node<Int>?) -> [Int] {
+        if root == nil {
+            return []
         }
-    }
-}
-
-extension BinaryTree {
-    public func traverseInOrder(process: (T) -> Void) {
-        if case let .node(left, value, right) = self {
-            left.traverseInOrder(process: process)
-            process(value)
-            right.traverseInOrder(process: process)
-        }
+        var result: [Int] = []
+        result.append((root?.data!)!)
+        result += preorderTraversal(root!.leftChild)
+        result += preorderTraversal(root!.rightChild)
+        return result
     }
     
-    public func traversePreOrder(process: (T) -> Void) {
-        if case let .node(left, value, right) = self {
-            process(value)
-            left.traversePreOrder(process: process)
-            right.traversePreOrder(process: process)
+    func inorderTraversal(_ root: Node<Int>?) -> [Int] {
+        if root == nil {
+            return []
         }
+        var result: [Int] = []
+        result += inorderTraversal(root!.leftChild)
+        result.append(root!.data!)
+        result += inorderTraversal(root!.rightChild)
+        return result
     }
     
-    public func traversePostOrder(process: (T) -> Void) {
-        if case let .node(left, value, right) = self {
-            left.traversePostOrder(process: process)
-            right.traversePostOrder(process: process)
-            process(value)
+    func postorderTraversal(_ root: Node<Int>?) -> [Int] {
+        if root == nil {
+            return []
         }
-    }
-}
-
-extension BinaryTree {
-    func invert() -> BinaryTree {
-        if case let .node(left, value, right) = self {
-            return .node(right.invert(), value, left.invert())
-        } else {
-            return .empty
-        }
+        var result: [Int] = []
+        result += postorderTraversal(root!.leftChild)
+        result += postorderTraversal(root!.rightChild)
+        result.append(root!.data!)
+        return result
     }
 }
