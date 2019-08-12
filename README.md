@@ -1,6 +1,7 @@
 # Data-Structure
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Recursive 
 https://www.geeksforgeeks.org/recursion-practice-problems-solutions/
 ### Question1
@@ -43,3 +44,11 @@ Reverse the String without using Recrusive.
 ### Question3
 Implements Queue using Stack.
 >>>>>>> Stack
+=======
+https://medium.com/@codingfreak/queue-data-structure-practice-problems-and-interview-questions-f459bf0578db <br />
+https://www.geeksforgeeks.org/queue-data-structure/ <br />
+## Queue
+### Queue implementation using Array
+### Queue implementation using LinkedList
+
+>>>>>>> Queue
