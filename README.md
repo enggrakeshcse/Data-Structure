@@ -1,5 +1,6 @@
 # Data-Structure
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Recursive 
 https://www.geeksforgeeks.org/recursion-practice-problems-solutions/
 ### Question1
@@ -31,3 +32,14 @@ Third Element from end?
 How do delete the elements in an linked list whose sum is equal to zero?
 >>>>>>> Linked-List
 
+=======
+## Stack
+### Stack Implementation using Array
+### Stack Implementation using LinkedList
+### Question1
+Check if given expression is balanced expression or not?
+### Question2
+Reverse the String without using Recrusive.
+### Question3
+Implements Queue using Stack.
+>>>>>>> Stack
