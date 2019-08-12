@@ -62,6 +62,6 @@ extension Node {
         return left + right + 1
     }
     var description: String{
-        return "value = \(self.data ?? nil) LeftChild = \(self.leftChild?.data ?? nil) RightChild = \(self.rightChild?.data ?? nil)"
+        return "value = \(String(describing: self.data ?? nil)) LeftChild = \(String(describing: self.leftChild?.data ?? nil)) RightChild = \(String(describing: self.rightChild?.data ?? nil))"
     }
 }
