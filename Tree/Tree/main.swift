@@ -27,5 +27,6 @@ let binaryTree = BinaryTree<Int>()
 print(binaryTree.inorderTraversal(zero))
 print(binaryTree.preorderTraversal(zero))
 print(binaryTree.postorderTraversal(zero))
-
-
+print(zero.count ?? 0)
+print(one.count ?? 0)
+print(zero.description)

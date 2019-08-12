@@ -55,3 +55,13 @@ class BinaryTree<T: Equatable> {
         return result
     }
 }
+extension Node {
+    var count: Int? {
+        let left = self.leftChild?.count ?? 0
+        let right = self.rightChild?.count ?? 0
+        return left + right + 1
+    }
+    var description: String{
+        return "value = \(self.data ?? nil) LeftChild = \(self.leftChild?.data ?? nil) RightChild = \(self.rightChild?.data ?? nil)"
+    }
+}
