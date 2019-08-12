@@ -109,3 +109,21 @@ TimeComplexity = O(nlogn)<br/>
 ### Quick Sort 
 TimeComplexity = O(nlogn) <br />
 <img src="https://github.com/enggrakeshcse/Data-Structure/blob/Sorting-Algo/Sort-Algo/quick_sort.jpg" /> 
+
+### Binary Tree
+https://github.com/raywenderlich/swift-algorithm-club/tree/master/Binary%20Tree
+https://www.geeksforgeeks.org/binary-tree-data-structure/
+
+A tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+
+### Implements a Binary Tree
+for example <br />
+<img src="https://github.com/enggrakeshcse/Data-Structure/blob/Trees/Tree/images/binaryTree.png" /> 
+
+### Traverse inorder, Preorder and postorder in Binary Tree
+### Inorder (or depth-first):
+first look at the left child of a node, then at the node itself, and finally at its right child. <br />
+### Preorder
+first look at a node, then at its left and right children. <br />
+### Postorder
+first look at the left and right children and process the node itself last. <br />
