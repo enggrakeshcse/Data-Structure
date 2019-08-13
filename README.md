@@ -123,6 +123,7 @@ for example <br />
 <img src="https://github.com/enggrakeshcse/Data-Structure/blob/Trees/Tree/images/binaryTree.png" /> 
 
 ### Traverse inorder, Preorder and postorder in Binary Tree
+
  Inorder (or depth-first):-<br />
 first look at the left child of a node, then at the node itself, and finally at its right child. <br />
 [7, 3, 8, 1, 9, 4, 10, 0, 11, 5, 12, 2, 13, 6, 14]<br /><br />
