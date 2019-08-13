@@ -136,7 +136,7 @@ first look at the left and right children and process the node itself last. <br 
 ### Binary Search Tree
 https://www.geeksforgeeks.org/binary-search-tree-data-structure/
 https://medium.com/@codingfreak/binary-search-tree-bst-practice-problems-and-interview-questions-ea13a6731098
-<br />Binary Search Tree is a node-based binary tree data structure which has the following properties:<br />
+<br />Binary Search Tree is a node-based binary tree data structure which has the following properties:<br /><br />
                 # The left subtree of a node contains only nodes with keys lesser than the node’s key.<br />
                 # The right subtree of a node contains only nodes with keys greater than the node’s key.<br />
                 # The left and right subtree each must also be a binary search tree.<br />
