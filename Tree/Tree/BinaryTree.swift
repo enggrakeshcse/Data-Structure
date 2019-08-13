@@ -15,7 +15,7 @@ class Node<T: Equatable> {
     var data: T?
     var leftChild: Node?
     var rightChild: Node?
-    init(data: T, leftChild: Node? = nil, rightChild: Node? = nil) {
+    init(data: T? = nil, leftChild: Node? = nil, rightChild: Node? = nil) {
         self.data = data
         self.leftChild = leftChild
         self.rightChild = rightChild

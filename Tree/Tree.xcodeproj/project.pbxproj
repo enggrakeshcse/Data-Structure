@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CEA5F74C23013B520032D869 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5F74B23013B520032D869 /* main.swift */; };
 		CEA5F7532301467C0032D869 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA5F7522301467C0032D869 /* BinaryTree.swift */; };
+		CEFFC7E323028FAB00AFB454 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFC7E223028FAB00AFB454 /* BinarySearchTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		CEA5F74823013B520032D869 /* Tree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tree; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA5F74B23013B520032D869 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CEA5F7522301467C0032D869 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		CEFFC7E223028FAB00AFB454 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				CEA5F74B23013B520032D869 /* main.swift */,
 				CEA5F7522301467C0032D869 /* BinaryTree.swift */,
+				CEFFC7E223028FAB00AFB454 /* BinarySearchTree.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			files = (
 				CEA5F7532301467C0032D869 /* BinaryTree.swift in Sources */,
 				CEA5F74C23013B520032D869 /* main.swift in Sources */,
+				CEFFC7E323028FAB00AFB454 /* BinarySearchTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
