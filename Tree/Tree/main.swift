@@ -45,5 +45,26 @@ let binaryTree = BinaryTree<Int>()
 print(binaryTree.inorderTraversal(root.rightChild))
 print(binaryTree.postorderTraversal(root.rightChild))
 print(binaryTree.preorderTraversal(root.rightChild))
-binarySearchTree.searchElements(elements: 40, root: root.rightChild) ? print("find") : print("not find")
-binarySearchTree.searchElements(elements: 100, root: root.rightChild) ? print("find") : print("not find")
+if let root = binarySearchTree.searchElements(elements: 40, root: root.rightChild) {
+    print(root.data ?? 0)
+} else {
+    print("not found")
+}
+if let root = binarySearchTree.searchElements(elements: 100, root: root.rightChild) {
+    print(root.data ?? 0)
+} else {
+    print("not found")
+}
+binarySearchTree.removeElements(data: 20, root: root.rightChild)
+print(binaryTree.inorderTraversal(root))
+print(binaryTree.preorderTraversal(root))
+print(binaryTree.postorderTraversal(root))
+binarySearchTree.removeElements(data: 30, root: root.rightChild)
+print(binaryTree.inorderTraversal(root))
+print(binaryTree.preorderTraversal(root))
+print(binaryTree.postorderTraversal(root))
+binarySearchTree.removeElements(data: 50, root: root.rightChild)
+print(binaryTree.inorderTraversal(root))
+print(binaryTree.preorderTraversal(root))
+print(binaryTree.postorderTraversal(root))
+

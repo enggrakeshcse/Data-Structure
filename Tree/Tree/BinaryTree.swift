@@ -27,7 +27,9 @@ class BinaryTree<T: Equatable> {
             return []
         }
         var result: [Int] = []
-        result.append((root?.data!)!)
+        if let data = root?.data {
+            result.append(data)
+        }
         result += preorderTraversal(root!.leftChild)
         result += preorderTraversal(root!.rightChild)
         return result
@@ -39,7 +41,9 @@ class BinaryTree<T: Equatable> {
         }
         var result: [Int] = []
         result += inorderTraversal(root!.leftChild)
-        result.append(root!.data!)
+        if let data = root?.data {
+            result.append(data)
+        }
         result += inorderTraversal(root!.rightChild)
         return result
     }
@@ -51,7 +55,9 @@ class BinaryTree<T: Equatable> {
         var result: [Int] = []
         result += postorderTraversal(root!.leftChild)
         result += postorderTraversal(root!.rightChild)
-        result.append(root!.data!)
+        if let data = root?.data {
+            result.append(data)
+        }
         return result
     }
 }
