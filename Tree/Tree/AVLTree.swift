@@ -29,8 +29,26 @@ class AVLTree {
     func height(node: AvlNode?) ->Int{
         return node == nil ? 0 : (node?.height ?? 1)
     }
-    func chackBalanceTree(node: AvlNode?) -> Int {
+    func getBalanceTree(node: AvlNode?) -> Int {
         return node == nil ? 0 : height(node: node?.left) - height(node: node?.right)
+    }
+    func leftRotate(node: AvlNode?) -> AvlNode {
+        let y = node?.right
+        let t = y?.left
+        y?.left = node
+        node?.right = t
+        node?.height = 1 + max(a: height(node: node?.left), b: height(node: node?.right))
+        y?.height = 1 + max(a: height(node: y?.left), b: height(node: y?.right))
+        return y ?? AvlNode()
+    }
+    func rightRotate(node: AvlNode?) -> AvlNode {
+        let x = node?.left
+        let t2 = x?.right
+        x?.right = node
+        node?.left = t2
+        x?.height = 1 + max(a: height(node: x?.left), b: height(node: x?.right))
+        node?.height = 1 + max(a: height(node: node?.left), b: height(node: node?.right))
+        return x ?? AvlNode()
     }
     func insert(data: Int, node: AvlNode?) -> AvlNode{
         if node == nil {
@@ -43,6 +61,26 @@ class AVLTree {
         } else {
             return node ?? AvlNode()
         }
-        return node!
+        node?.height = 1 + max(a: height(node: node?.left), b: height(node: node?.right))
+        let balance = getBalanceTree(node: node)
+        // Left Left case
+        if balance > 1 && data < (node?.left?.data ?? 0) {
+            return rightRotate(node: node)
+        }
+        // left right case
+        if balance > 1 && data > (node?.left?.data ?? 0) {
+            node?.left = leftRotate(node: node?.left)
+            return rightRotate(node: node)
+        }
+        // right right case
+        if balance < -1 && data < (node?.right?.data ?? 0) {
+            return leftRotate(node: node)
+        }
+        // right left case
+        if balance < -1 && data > (node?.right?.data ?? 0) {
+            node?.right = rightRotate(node: node?.right)
+            return leftRotate(node: node)
+        }
+        return node ?? AvlNode()
     }
 }
