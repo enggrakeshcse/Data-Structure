@@ -32,39 +32,39 @@ import Foundation
 //print(zero.description)
 
 // MARK: - Binary Search Tree
-let binarySearchTree = BinarySearchTree()
-var root = Node<Int>()
-root = binarySearchTree.insert(elements: 50, root: root)
-root = binarySearchTree.insert(elements: 30, root: root)
-root = binarySearchTree.insert(elements: 20, root: root)
-root = binarySearchTree.insert(elements: 40, root: root)
-root = binarySearchTree.insert(elements: 70, root: root)
-root = binarySearchTree.insert(elements: 60, root: root)
-root = binarySearchTree.insert(elements: 80, root: root)
-let binaryTree = BinaryTree<Int>()
-print(binaryTree.inorderTraversal(root.rightChild))
-print(binaryTree.postorderTraversal(root.rightChild))
-print(binaryTree.preorderTraversal(root.rightChild))
-if let root = binarySearchTree.searchElements(elements: 40, root: root.rightChild) {
-    print(root.data ?? 0)
-} else {
-    print("not found")
-}
-if let root = binarySearchTree.searchElements(elements: 100, root: root.rightChild) {
-    print(root.data ?? 0)
-} else {
-    print("not found")
-}
-binarySearchTree.removeElements(data: 20, root: root.rightChild)
-print(binaryTree.inorderTraversal(root))
-print(binaryTree.preorderTraversal(root))
-print(binaryTree.postorderTraversal(root))
-binarySearchTree.removeElements(data: 30, root: root.rightChild)
-print(binaryTree.inorderTraversal(root))
-print(binaryTree.preorderTraversal(root))
-print(binaryTree.postorderTraversal(root))
-binarySearchTree.removeElements(data: 50, root: root.rightChild)
-print(binaryTree.inorderTraversal(root))
-print(binaryTree.preorderTraversal(root))
-print(binaryTree.postorderTraversal(root))
+//let binarySearchTree = BinarySearchTree()
+//var root = Node<Int>()
+//root = binarySearchTree.insert(elements: 50, root: root)
+//root = binarySearchTree.insert(elements: 30, root: root)
+//root = binarySearchTree.insert(elements: 20, root: root)
+//root = binarySearchTree.insert(elements: 40, root: root)
+//root = binarySearchTree.insert(elements: 70, root: root)
+//root = binarySearchTree.insert(elements: 60, root: root)
+//root = binarySearchTree.insert(elements: 80, root: root)
+//let binaryTree = BinaryTree<Int>()
+//print(binaryTree.inorderTraversal(root.rightChild))
+//print(binaryTree.postorderTraversal(root.rightChild))
+//print(binaryTree.preorderTraversal(root.rightChild))
+//if let root = binarySearchTree.searchElements(elements: 40, root: root.rightChild) {
+//    print(root.data ?? 0)
+//} else {
+//    print("not found")
+//}
+//if let root = binarySearchTree.searchElements(elements: 100, root: root.rightChild) {
+//    print(root.data ?? 0)
+//} else {
+//    print("not found")
+//}
+//binarySearchTree.removeElements(data: 20, root: root.rightChild)
+//print(binaryTree.inorderTraversal(root))
+//print(binaryTree.preorderTraversal(root))
+//print(binaryTree.postorderTraversal(root))
+//binarySearchTree.removeElements(data: 30, root: root.rightChild)
+//print(binaryTree.inorderTraversal(root))
+//print(binaryTree.preorderTraversal(root))
+//print(binaryTree.postorderTraversal(root))
+//binarySearchTree.removeElements(data: 50, root: root.rightChild)
+//print(binaryTree.inorderTraversal(root))
+//print(binaryTree.preorderTraversal(root))
+//print(binaryTree.postorderTraversal(root))
 
