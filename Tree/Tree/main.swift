@@ -68,3 +68,18 @@ print(binaryTree.inorderTraversal(root))
 print(binaryTree.preorderTraversal(root))
 print(binaryTree.postorderTraversal(root))
 
+//MARK: - AVL Tree
+var node = AvlNode()
+let avlobject = AVLTree()
+node = avlobject.insert(data: 10, node: node)
+node = avlobject.insert(data: 11, node: node)
+node = avlobject.insert(data: 12, node: node)
+node = avlobject.insert(data: 13, node: node)
+node = avlobject.insert(data: 14, node: node)
+node = avlobject.insert(data: 15, node: node)
+node = avlobject.insert(data: 16, node: node)
+let binaryobject = BinaryTree<Int>()
+
+print(binaryobject.inorderTraversal(node))
+print(binaryobject.preorderTraversal(node))
+print(binaryobject.postorderTraversal(node))
