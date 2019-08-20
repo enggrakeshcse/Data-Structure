@@ -153,3 +153,20 @@ https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
 AVL tree is a self-balancing Binary Search Tree (BST) where the difference between heights of left and right subtrees cannot be more than one for all nodes.
 
 ### Implementation of AVL Tree
+<<<<<<< HEAD
+=======
+
+=======
+
+### Graph
+
+A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.<br />
+
+<img src="https://github.com/enggrakeshcse/Data-Structure/blob/Graph/Graph/Images/graph.png" /> 
+
+<br />
+In the above Graph, the set of vertices V = {0,1,2,3,4} and the set of edges E = {01, 12, 23, 34, 04, 14, 13}<br />
+
+https://github.com/raywenderlich/swift-algorithm-club/tree/master/Graph
+https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/
+>>>>>>> Graph
