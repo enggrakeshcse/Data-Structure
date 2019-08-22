@@ -35,12 +35,24 @@ class SingleLinkedList<T: Equatable> {
             print("There is no element in Linked List ")
         } else {
             while current.next != nil {
-                print(current.val ?? "")
+                print(current.val ?? "", separator: " ", terminator: "->")
+//                print(current.val ?? "")
                 current = current.next
             }
-            print(current.val ?? "")
+            print(current.val ?? "", separator: " ", terminator: " ")
+//            print(current.val ?? "")
         }
     }
+//
+//    func returnEdge() -> [Int] {
+//        var result = [Int]()
+//        var current: SingleNode! = head
+//        if current.val == nil {
+//            return [0]
+//        } else {
+//            while current.next =
+//        }
+//    }
     //MARK: - remove from linkedList
     func remove(value: T) {
         var current: SingleNode! = head

@@ -19,6 +19,15 @@ class Graph {
 }
 class GraphSwift {
     func addEdges(graph: Graph, scr: Int, des: Int) {
-        
+        graph.addListArray[scr].insert(value: des)
+        graph.addListArray[des].insert(value: scr)
+    }
+    func printGraph(graph: Graph) {
+        for vertex in 0..<graph.v {
+            print("Adjacency list of vertex \(vertex) ")
+            print("head")
+            graph.addListArray[vertex].printAllElemetArray()
+            print("")
+        }
     }
 }
